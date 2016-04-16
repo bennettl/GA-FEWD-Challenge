@@ -18,9 +18,7 @@ Pure HTML5, CSS3, Javascript, no frameworks!
 
 #### Bonuses
 
-* Validates for number only input, restricts to positive values in places where it makes sense (distance, speed, etc.)
-
-- Using HTML5, but can use Javascript regular expression
+* Validates for number only input, restricts to positive values in places where it makes sense (distance, speed, etc.). Using HTML5, but can use Javascript regular expression
 
 * Reponsive design with CSS3 media queries 
 
