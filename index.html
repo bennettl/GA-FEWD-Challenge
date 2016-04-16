@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+	<h1>FEWD Code Challenge</h1>
+	<div id="author">By Bennett Lee</div>
+
+	<!-- BASIC CALCULATOR -->
+	<section>
+		<h2>Basic</h2>
+		<form id="bc-form" method="POST" action="/" autocomplete="off">
+
+			<label>Number 1</label>
+			<input id="bc-num-1" type="number" name="num1" required="required" step="any" /><br />
+			
+			<label>Number 2</label>
+			<input id="bc-num-2" type="number" name="num2" required="required" step="any" /><br />
+
+			<label>Operators</label>
+			<select id="bc-operator" name="bc-operator">
+			  <option value="add">Add</option>
+			  <option value="subtract">Subtract</option>
+			  <option value="multiply">Multiply</option> 
+			  <option value="divide">Divide</option>
+			</select>
+
+			<div id="bc-answer" class="answer"></div>
+
+			<input type="submit" name="bc-submit" value="Calculate" class="calculate-btn"  />
+		</form>
+	</section>
+
+	<!-- TRIP CALCULATOR -->
+	<section>
+		<h2>Trip</h2>
+		<form id="tc-form" method="POST" action="/" autocomplete="off">
+			
+			<label>Distance (Miles)</label>
+			<input id="tc-distance" type="number" name="tc-distance" step="any" min="0" />
+			
+			<label>MPG</label>
+			<input id="tc-mpg" type="number" name="tc-mpg" required="required" step="any" min="0" />
+
+			<label>Cost</label>
+			<input id="tc-cost" type="number" name="tc-cost" required="required" step="any" min="0" />
+
+			<label>Speed (MPH)</label>
+			<input id="tc-speed" type="number" name="tc-speed" required="required" step="any" min="0" />
+
+			<div id="tc-answer" class="answer"></div>
+
+			<input type="submit" name="tc-submit" value="Calculate" class="calculate-btn" step="any" />
+		</form>
+	</section>
+
+	<!-- BMI CALCULATOR -->
+	<section>
+		<h2>BMI</h2>
+		<form id="bmic-form" method="POST" action="/" autocomplete="off">
+
+			<label>Units</label>
+			<select id="bmic-unit">
+			  <option value="imperial">Imperial</option>
+			  <option value="metric">Metric</option>
+			</select>
+
+			<label>Mass (<span id="bmic-mass-unit-label">lbs</span>)</label>
+			<input id="bmic-mass" type="number" name="bmic-mass" required="required" step="any" min="0" />
+			
+			<label>Height (<span id="bmic-height-unit-label">in</span>)</label>
+			<input id="bmic-height" type="number" name="bmic-height" required="required" step="any" min="0" />
+
+			<div id="bmic-answer" class="answer"></div>
+
+			<input type="submit" name="bmic-submit" value="Calculate" class="calculate-btn" min="0" />
+		</form>
+	</section>
+
+	<!-- MORTGAGE CALCULATOR -->
+	<section>
+		<h2>Mortgage</h2>
+		<form id="mc-form" method="POST" action="/" autocomplete="off">
+			
+			<label>Loan</label>
+			<input id="mc-loan" type="number" name="mc-loan" required="required" step="any" min="0" />
+			
+			<label>APR</label>
+			<input id="mc-apr" type="number" name="mc-apr" required="required" step="any" min="0" />
+
+			<label>Term</label>
+			<input id="mc-term" type="number" name="mc-term" required="required" step="any" min="0" />
+
+			<div id="mc-answer" class="answer error"></div>
+
+			<input type="submit" name="tc-submit" value="Calculate" class="calculate-btn" min="0" />
+		</form>
+	</section>
+</body>
+</html>
